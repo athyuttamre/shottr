@@ -1,0 +1,33 @@
+/* General Styles */
+
+body {
+  font-family: Karla, sans-serif;
+  letter-spacing: -0.25px;
+}
+
+h1 {
+  letter-spacing: -0.85px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.section {
+  height: 554px;
+}
+
+/* Sections */
+
+nav a {
+  opacity: 0.8;
+}
+
+nav a:hover {
+  opacity: 1.0;
+}
+
+.splash {
+  color: white;
+  background-color: #2A96FF;
+}
