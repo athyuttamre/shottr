@@ -1,11 +1,14 @@
 /* General Styles */
 
 body {
+  font-size: 24px;
   font-family: Karla, sans-serif;
   letter-spacing: -0.25px;
+  color: #0C2E56;
 }
 
 h1 {
+  font-size: 30px;
   letter-spacing: -0.85px;
 }
 
@@ -17,10 +20,33 @@ h1 {
   height: 554px;
 }
 
-/* Sections */
+
+/*** Sections ***/
+
+/* Splash */
+
+nav {
+  margin-top: 32px;
+  overflow: auto;
+
+  font-size: 16px;
+}
+
+nav .left-nav {
+  float: left;
+}
+
+nav .right-nav {
+  float: right;
+}
 
 nav a {
+  color: white;
   opacity: 0.8;
+}
+
+nav a:not(:last-child) {
+  margin-right: 20px;
 }
 
 nav a:hover {
@@ -30,4 +56,10 @@ nav a:hover {
 .splash {
   color: white;
   background-color: #2A96FF;
+}
+
+/* Examples */
+
+.examples {
+  background-color: #F8E71C;
 }
