@@ -76,6 +76,12 @@ nav a:hover {
   padding: 0;
 }
 
+/* Instructions */
+
+.instructions {
+  background-color: #F5FAFF;
+}
+
 /* Examples */
 
 .examples {
@@ -94,6 +100,31 @@ nav a:hover {
 
 .download .content {
   height: 300px;
+}
+
+.download .download-btn {
+  display: block;
+  margin: auto;
+  padding: 0 27px;
+
+  height: 84px;
+  width: 312px;
+
+  font-size: 24px;
+  line-height: 84px;
+  background-color: #2A96FF;
+}
+
+.download-btn, .download-btn:hover {
+  color: white;
+  border: 0;
+}
+
+.download-btn .arrow-emoji {
+  position: relative;
+  top: 2px;
+
+  padding-left: 6px;
 }
 
 footer {
