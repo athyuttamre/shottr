@@ -12,12 +12,26 @@ h1 {
   letter-spacing: -0.85px;
 }
 
-.container {
-  max-width: 960px;
+a, a:hover, a:focus, a:visited {
+  color: currentColor;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  border-bottom: 1px currentColor dotted;
 }
 
 .section {
   height: 554px;
+}
+
+.section .container {
+  max-width: 960px;
+  padding: 120px 0;
+}
+
+.content {
+  text-align: center;
 }
 
 
@@ -58,8 +72,41 @@ nav a:hover {
   background-color: #2A96FF;
 }
 
+.splash .container {
+  padding: 0;
+}
+
 /* Examples */
 
 .examples {
   background-color: #F8E71C;
+}
+
+/* Download */
+
+.download {
+  background-color: #2B2B2B;
+}
+
+.download .container {
+  padding-bottom: 0;
+}
+
+.download .content {
+  height: 300px;
+}
+
+footer {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+footer .footer-links {
+  word-spacing: 20px;
+}
+
+footer .copyright {
+  margin-top: 28px;
+  opacity: 0.4;
 }
