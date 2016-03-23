@@ -1,5 +1,9 @@
 /* General Styles */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 24px;
   font-family: Karla, sans-serif;
@@ -103,16 +107,20 @@ nav a:hover {
 }
 
 .download .download-btn {
-  display: block;
+  display: inline-block;
   margin: auto;
   padding: 0 27px;
 
   height: 84px;
   width: 312px;
 
+  position: relative;
+  z-index: 2;
+
   font-size: 24px;
   line-height: 84px;
   background-color: #2A96FF;
+  opacity: 0.95;
 }
 
 .download-btn, .download-btn:hover {
@@ -125,6 +133,20 @@ nav a:hover {
   top: 2px;
 
   padding-left: 6px;
+}
+
+.download-shadow {
+  display: inline-block;
+  margin: auto;
+
+  height: 84px;
+  width: 312px;
+
+  position: absolute;
+  z-index: 1;
+  transform: translateX(5px) translateY(5px);
+
+  background-color: #084988;
 }
 
 footer {
