@@ -241,7 +241,53 @@ img.iphone-shot {
 /* Instructions */
 
 .instructions {
+  height: 600px;
   background-color: #F5FAFF;
+}
+
+.instructions .container {
+  overflow: auto;
+}
+
+.instructions-phone {
+  position: relative;
+  float: left;
+  margin-left: 60px;
+}
+
+.instructions-phone video {
+  float: left;
+}
+
+.instructions-list {
+  float: right;
+  padding-right: 80px;
+}
+
+.instructions-list ol {
+  list-style-type: none;
+}
+
+.instructions-list li {
+  margin-bottom: 40px;
+}
+
+.instructions-list .ln {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+
+  text-align: center;
+  line-height: 40px;
+
+  background-color: #0C2E56;
+  color: white;
+  border-radius: 100%;
+}
+
+.instructions-list .second-line {
+  padding-left: 60px;
 }
 
 /* Examples */
@@ -274,13 +320,6 @@ img.iphone-shot {
   display: inline-block;
   vertical-align: top;
 
-  width: 290px;
-  height: 591px;
-
-  background: url("../assets/img/iphones.png");
-  background-size: 400% auto;
-  background-repeat: no-repeat;
-
   transform: translateY(40px);
   opacity: 0.9;
   transition: all 0.2s ease;
@@ -291,26 +330,35 @@ img.iphone-shot {
   opacity: 1.0;
 }
 
-.example-phone.space-gray {
+.iphone {
+  width: 290px;
+  height: 591px;
+
+  background: url("../assets/img/iphones.png");
+  background-size: 400% auto;
+  background-repeat: no-repeat;
+}
+
+.iphone.space-gray {
   background-position: 0 0;
 }
 
-.example-phone.white {
+.iphone.white {
   background-position: 33.33% 0;
 }
 
-.example-phone.gold {
+.iphone.gold {
   background-position: 66.67% 0;
 }
 
-.example-phone.rose-gold {
+.iphone.rose-gold {
   background-position: 100% 0;
 }
 
-.example-phone video {
+.iphone video {
   width: 86.3%;
 
-  position: relative;
+  position: absolute;
   top: 12.8%;
   left: 7%;
 }
