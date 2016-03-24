@@ -398,6 +398,22 @@ video.uber-video {
   top: 0;
 }
 
+.uber-phone {
+  transition: 0.3s ease;
+}
+
+.uber-phone.turn-left {
+  transform: rotateZ(-2deg);
+}
+
+.uber-phone.turn-right {
+  transform: rotateZ(2deg);
+}
+
+.uber-phone.go-forward {
+  transform: rotateX(-25deg);
+}
+
 .trump-container.active {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
   transform: translate3d(0, 0, 0);

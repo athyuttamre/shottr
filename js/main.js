@@ -59,6 +59,31 @@ $(document).ready(function() {
     }, 250);
   });
 
+  $uberPhone = $(".uber-phone");
+  var existingClasses = "example-phone iphone white uber-phone active ";
+  $uberVideo = $(".uber-container video");
+  $uberVideo[0].ontimeupdate = function() {
+    var currentTime = this.currentTime;
+
+    if (currentTime > 12.8) {
+      $uberPhone.removeClass().addClass(existingClasses);
+    } else if (currentTime > 12) {
+      $uberPhone.removeClass().addClass(existingClasses + "turn-right");
+    } else if (currentTime > 11) {
+      $uberPhone.removeClass().addClass(existingClasses + "go-forward");
+    } else if (currentTime > 10) {
+      $uberPhone.removeClass().addClass(existingClasses + "turn-right");
+    } else if (currentTime > 9) {
+      $uberPhone.removeClass().addClass(existingClasses + "go-forward");
+    } else if (currentTime > 7.7) {
+      $uberPhone.removeClass().addClass(existingClasses + "turn-left");
+    } else {
+      $uberPhone.removeClass().addClass(existingClasses);
+    }
+
+    console.log(currentTime);
+  }
+
   $examplePhones.mouseleave(function() {
     var $self = $(this);
     $self.removeClass("active");
