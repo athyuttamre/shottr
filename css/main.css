@@ -257,6 +257,12 @@ img.iphone-shot {
 
 .instructions-phone video {
   float: left;
+  opacity: 1.0;
+}
+
+.instructions-phone video.hidden {
+  opacity: 0;
+  transition: opacity 2s ease;
 }
 
 .instructions-list {
