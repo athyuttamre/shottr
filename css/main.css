@@ -78,6 +78,23 @@ nav .left-nav {
   float: left;
 }
 
+nav .logo {
+  display: block;
+  height: 20px;
+  width: 20px;
+
+  font-size: 0;
+  line-height: 0;
+
+  background-image: url("../assets/img/logo.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+nav .logo:hover {
+  border: 0;
+}
+
 nav .right-nav {
   float: right;
 }
@@ -85,6 +102,7 @@ nav .right-nav {
 nav a {
   color: white;
   opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 
 nav a:not(:last-child) {
@@ -96,12 +114,128 @@ nav a:hover {
 }
 
 .splash {
+  height: 640px;
   color: white;
   background-color: #2A96FF;
 }
 
 .splash .container {
   padding: 0;
+}
+
+.splash h1 {
+  animation-name: h1-appear;
+  animation-duration: 0.6s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+@keyframes h1-appear {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1.0;
+  }
+}
+
+.shots {
+  transform-style: preserve-3d;
+}
+
+.shots img {
+  width: 180px;
+  float: left;
+
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.87,-.41,.19,1.44);
+}
+
+.shots img:not(.iphone-shot) {
+  animation-duration: 0.5s;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+}
+
+.snapchat-shot {
+  animation-name: snapchat-appear;
+  animation-delay: 0.2s;
+  transform: translateX(20px) translateY(260px);
+}
+
+@keyframes snapchat-appear {
+  from {
+    transform: translateX(20px) translateY(260px);
+  }
+  to {
+    transform: translateY(200px) rotateZ(-6deg);
+  }
+}
+
+.facebook-shot {
+  animation-name: facebook-appear;
+  transform: translateX(20px) translateY(260px);
+}
+
+@keyframes facebook-appear {
+  from {
+    transform: translateX(20px) translateY(260px);
+  }
+  to {
+    transform: translateY(200px) rotateZ(-3deg);
+  }
+}
+
+img.iphone-shot {
+  width: 220px;
+  animation-name: iphone-appear;
+  animation-duration: 0.6s;
+  animation-delay: 0.5s;
+
+  transform: translateY(120px);
+}
+
+@keyframes iphone-appear {
+  from {
+    transform: translateY(120px);
+  }
+  to {
+    transform: translateY(60px);
+  }
+}
+
+.weather-shot {
+  animation-name: weather-appear;
+  animation-delay: 0.1s;
+  transform: translateX(-20px) translateY(260px);
+}
+
+@keyframes weather-appear {
+  from {
+    transform: translateX(-20px) translateY(260px);
+  }
+  to {
+    transform: translateY(200px) rotateZ(3deg);
+  }
+}
+
+.messenger-shot {
+  animation-name: messenger-appear;
+  animation-delay: 0.3s;
+  transform: translateX(-20px) translateY(260px);
+}
+
+@keyframes messenger-appear {
+  from {
+    transform: translateX(-20px) translateY(260px);
+  }
+  to {
+    transform: translateY(200px) rotateZ(6deg);
+  }
 }
 
 /* Instructions */
