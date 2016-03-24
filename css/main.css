@@ -17,7 +17,11 @@ h1 {
   letter-spacing: -0.85px;
 }
 
-a, a:hover, a:focus, a:active, a:visited {
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
   color: currentColor;
 }
 
@@ -204,7 +208,10 @@ nav a:hover {
   opacity: 0.95;
 }
 
-.download-btn, .download-btn:hover, .download-btn:focus, .download-btn:active {
+a.download-btn,
+a.download-btn:hover,
+a.download-btn:focus,
+a.download-btn:active {
   color: white;
   border: 0;
 }
