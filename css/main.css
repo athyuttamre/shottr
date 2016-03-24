@@ -443,6 +443,38 @@ video.uber-video {
 
 .sharing {
   background-color: #632699;
+  color: white;
+}
+
+.sharing .container {
+  padding-top: 20px;
+}
+
+.sharing-shots {
+  text-align: center;
+}
+
+.shot-container {
+  display: inline-block;
+  transform: translateY(40px);
+
+  font-size: 40px;
+}
+
+.emoji {
+  padding-bottom: 20px;
+}
+
+.left-share {
+  transform: translateY(40px) rotateZ(-3deg);
+}
+
+.right-share {
+  transform: translateY(40px) rotateZ(3deg);
+}
+
+.shot-container img {
+  width: 240px;
 }
 
 /* Download */
