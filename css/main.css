@@ -442,6 +442,7 @@ video.uber-video {
 /* Sharing */
 
 .sharing {
+  height: 585px;
   background-color: #632699;
   color: white;
 }
