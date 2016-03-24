@@ -247,6 +247,7 @@ img.iphone-shot {
 /* Examples */
 
 .examples {
+  height: 680px;
   background-color: #F8E71C;
 }
 
@@ -273,12 +274,21 @@ img.iphone-shot {
   display: inline-block;
   vertical-align: top;
 
-  width: 212px;
-  height: 432px;
+  width: 290px;
+  height: 591px;
 
   background: url("../assets/img/iphones.png");
   background-size: 400% auto;
   background-repeat: no-repeat;
+
+  transform: translateY(40px);
+  opacity: 0.9;
+  transition: all 0.2s ease;
+}
+
+.example-phone.active {
+  transform: translateY(0);
+  opacity: 1.0;
 }
 
 .example-phone.space-gray {
@@ -298,11 +308,28 @@ img.iphone-shot {
 }
 
 .example-phone video {
-  width: 86%;
+  width: 86.3%;
 
   position: relative;
   top: 12.8%;
   left: 7%;
+}
+
+.uber-container {
+  height: 445px;
+  width: 250px;
+
+  position: relative;
+  float: left;
+  top: 75px;
+  left: 20px;
+  overflow: hidden;
+}
+
+video.uber-video {
+  width: 323%;
+  left: -113%;
+  top: 0;
 }
 
 /* Sharing */
