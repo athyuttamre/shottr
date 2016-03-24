@@ -42,7 +42,7 @@ $(document).ready(function() {
        hH = $('.instructions').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
+   if (wS > (hT+hH-wH + 400)){
        console.log('you have scrolled to instructions');
        playInstructionsVideo();
    }
