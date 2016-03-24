@@ -126,7 +126,7 @@ nav a:hover {
 .splash h1 {
   animation-name: h1-appear;
   animation-duration: 0.6s;
-  animation-delay: 0.8s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 
   opacity: 0;
