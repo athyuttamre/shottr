@@ -255,6 +255,11 @@ img.iphone-shot {
   margin-left: 60px;
 }
 
+.instructions-phone.active {
+  margin-top: -60px;
+  transition: 0.5s ease;
+}
+
 .instructions-phone video {
   float: left;
   opacity: 1.0;
@@ -276,6 +281,13 @@ img.iphone-shot {
 
 .instructions-list li {
   margin-bottom: 40px;
+  opacity: 0;
+}
+
+.instructions-list li.appear {
+  transform: translateY(-20px);
+  opacity: 1.0;
+  transition: 0.5s ease;
 }
 
 .instructions-list .ln {

@@ -1,18 +1,35 @@
 $(document).ready(function() {
   // Instructions
   function playInstructionsVideo() {
+    var $instructionsPhone = $(".instructions-phone");
     var $screenshotVid = $(".screenshot-vid");
     var $drawingVid = $(".drawing-vid");
     var $basketballVid = $(".basketball-vid");
 
+    $instructionsPhone.addClass("active");
+
     setTimeout(function() {
-      $screenshotVid[0].play();
+      // Show screenshot
+      $(".instr-1").addClass("appear");
       setTimeout(function() {
+        $screenshotVid[0].play();
+      }, 500);
+
+      setTimeout(function() {
+        // Show drawing
         $screenshotVid.fadeOut();
-        $drawingVid[0].play();
+        $(".instr-2").addClass("appear");
         setTimeout(function() {
+          $drawingVid[0].play();
+        });
+
+        setTimeout(function() {
+          // Show basketball
           $drawingVid.fadeOut();
-          $basketballVid[0].play();
+          $(".instr-3").addClass("appear");
+          setTimeout(function() {
+            $basketballVid[0].play();
+          }, 500);
         }, 12000);
       }, 3000);
     }, 1000);
