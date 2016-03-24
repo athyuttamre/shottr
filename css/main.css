@@ -478,6 +478,18 @@ video.uber-video {
   width: 240px;
 }
 
+.arrow {
+  display: inline-block;
+}
+
+.second-arrow {
+  animation-delay: 0.5s;
+}
+
+.third-arrow {
+  animation-delay: 1s;
+}
+
 /* Download */
 
 .download {

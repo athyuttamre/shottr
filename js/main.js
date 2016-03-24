@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  new WOW().init();
+
   // Instructions
   function playInstructionsVideo() {
     var $instructionsPhone = $(".instructions-phone");
