@@ -17,7 +17,7 @@ h1 {
   letter-spacing: -0.85px;
 }
 
-a, a:hover, a:focus, a:visited {
+a, a:hover, a:focus, a:active, a:visited {
   color: currentColor;
 }
 
@@ -28,6 +28,8 @@ a:hover, a:focus {
 
 .section {
   position: relative;
+  z-index: 1;
+
   height: 554px;
 }
 
@@ -37,6 +39,7 @@ a:hover, a:focus {
 
   left: 0;
   top: -60px;
+  z-index: -1;
 
   width: 100%;
   height: 120px;
@@ -109,6 +112,61 @@ nav a:hover {
   background-color: #F8E71C;
 }
 
+.examples .container {
+  padding-top: 36px;
+}
+
+.examples .content {
+  margin-bottom: 60px;
+}
+
+.example-phones {
+  text-align: justify;
+}
+
+.example-phones:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+
+.example-phone {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  width: 212px;
+  height: 432px;
+
+  background: url("../assets/img/iphones.png");
+  background-size: 400% auto;
+  background-repeat: no-repeat;
+}
+
+.example-phone.space-gray {
+  background-position: 0 0;
+}
+
+.example-phone.white {
+  background-position: 33.33% 0;
+}
+
+.example-phone.gold {
+  background-position: 66.67% 0;
+}
+
+.example-phone.rose-gold {
+  background-position: 100% 0;
+}
+
+.example-phone video {
+  width: 86%;
+
+  position: relative;
+  top: 12.8%;
+  left: 7%;
+}
+
 /* Sharing */
 
 .sharing {
@@ -146,7 +204,7 @@ nav a:hover {
   opacity: 0.95;
 }
 
-.download-btn, .download-btn:hover {
+.download-btn, .download-btn:hover, .download-btn:focus, .download-btn:active {
   color: white;
   border: 0;
 }
